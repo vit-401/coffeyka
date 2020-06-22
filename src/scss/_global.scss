@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+// _________scrollbar
+// body::-webkit-scrollbar{
+//   width: 15px;
+// }
+// body::-webkit-scrollbar-track{
+//   background-color: transparent;
+// }
+// body::-webkit-scrollbar-thumb{
+//   background-color: $green;
+//   border-radius:7px;
+// }
+
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.header {
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  // max-width: 1517px;
+  // padding: 0 93px;
+  max-width: 1683px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 30px;
+}
