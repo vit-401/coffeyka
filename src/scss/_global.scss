@@ -6,12 +6,14 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  z-index: 1;
 }
 
 html,
 body {
   height: 100%;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 ul,
@@ -49,16 +51,21 @@ body {
 }
 
 // _________scrollbar
-// body::-webkit-scrollbar{
-//   width: 15px;
-// }
-// body::-webkit-scrollbar-track{
-//   background-color: transparent;
-// }
-// body::-webkit-scrollbar-thumb{
-//   background-color: $green;
-//   border-radius:7px;
-// }
+body::-webkit-scrollbar{
+  width: 15px;
+  background-color: transparent;
+  z-index: 6;
+}
+body::-webkit-scrollbar-track{
+  background-color: transparent;
+  z-index: 6;
+  
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #D64322;
+  border-radius:7px;
+  z-index: 6;
+}
 
 body {
   font-family: 'Roboto-Regular', sans-serif;
@@ -95,8 +102,6 @@ li {
 }
 
 .container {
-  // max-width: 1517px;
-  // padding: 0 93px;
   max-width: 1683px;
   width: 100%;
   margin: 0 auto;
@@ -106,38 +111,4 @@ li {
 .container-fluid {
   margin: 0 auto;
   padding: 0 30px;
-}
-
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  // margin-right: 135px !important;
-  // width: 250px !important;
-  text-align: left;
-  margin: 0 auto;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  // align-items: center;
-}
-.swiper-wrapper{
-  display: flex !important;
-  justify-content: space-between;
-  margin-left: 20px;
-}
-.swiper-container {
-//   width: 600px;
-  height: 380px;
 }

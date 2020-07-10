@@ -13,13 +13,40 @@
 <body>
   <div class="wrapper">
     <div class="content">
-      <header class="header">
+      <header class="header" >
+  <div class="slide__menu">
+    <div class="slide__menu-btn">
+      <div class="slide__btn-line"></div>
+      <div class="slide__btn-line"></div>
+    </div>
+    <div class="menu__slide-wrap">
+      <ul class="slide__menu-list">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#price">Наш кофе</a></li>
+        <li><a href="#promotions">Акции</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="slide__menu-data">
+        <div class="slide__menu__adress">Воронеж, ул. Невского, 52 г</div>
+        <a class="slide__menu_tell" href="tel:+74732575970">+7 (473) 257 59 70</a>
+        <div class="footer__social">
+          <a class="soc-link__inst" href="#" style="background-image: url(../images/icons/insta-w.svg);"></a>
+          <a class="soc-link__fb" href="#" style="background-image: url(../images/icons/facebook-w.svg);"></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="header__inner">
       <div class="header__image"></div>
       <div class="header__item">
         <div class="header__top-menu">
-          <div class="header__menu-btn"></div>
+          <div class="header__menu-btn">
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+          </div>
           <nav class="header__menu">
             <ul class="header__list">
               <li><a href="#">О нас</a></li>
@@ -29,7 +56,7 @@
               <li><a href="#">Контакты</a></li>
             </ul>
             <div class="menu__data">
-              <div class="dat-location">Воронеж, ул. Невского, 52 г</div>
+              <div class="data-location">Воронеж, ул. Невского, 52 г</div>
               <a href="#" class="data-phone">+7 (473) 257 59 70</a>
             </div>
           </nav>
@@ -57,14 +84,18 @@
           </div>
           <div class="header__stock">
             <a href="#" class="header__stock-title">Акция</a>
-            <div class="header__stock-image"></div>
-            <div class="header__stock-desc">
-              <div class="header__stock-desc__title">
-                Айриш-кофе <span>150 мл</span>
+            <div class="header__stock-wrap">
+              <div class="header__stock-image"></div>
+              <div class="stock-wrap__item">
+                <div class="header__stock-desc">
+                  <div class="header__stock-desc__title">
+                    Айриш-кофе <span>150 мл</span>
+                  </div>
+                  <div class="header__stock-desc__price">70 р.</div>
+                </div>
+                <a href="#" class="header__stock-link">Подробнее</a>
               </div>
-              <div class="header__stock-desc__price">70 р.</div>
             </div>
-            <a href="#" class="header__stock-link">Подробнее</a>
           </div>
         </div>
 
@@ -72,7 +103,7 @@
     </div>
   </div>
 </header>
-      <section class="about">
+      <section class="about" id="particles-js">
   <div class="container">
     <div class="about__title">О нас</div>
     <div class="about__inner">
@@ -131,161 +162,636 @@
     </div>
   </div>
 </section>
-      <section class="price">
+      <section class="price" id="price">
   <div class="container">
     <div class="price__title">Наш кофе</div>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
+
+    <div class="price__slider">
+
+      <div class="price__slide  slide-1">
+        <div class="price__slide-wrap">
+          <div class="price__slide-title">Цитрус раф
+            с карамелью
           </div>
-          <div class="price__slider-text">
+          <p class="price__slide-text">
             Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-  
-            <div class="drink__image" style="background-image: url(../images/icons/drink1.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink1.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                250 мл
+              </div>
+              <div class="price__slide-mony">
+                90 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Перфетто айс гляссе
+
+      <div class="price__slide  slide-2">
+        <div class="price__slide-wrap">
+          <div class="price__slide-title">Перфетто айс
+            гляссе
           </div>
-          <div class="price__slider-text">
-            Взбитые сливки, Пломбир,Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink2.png);"></div>
-            <div class="drink__price">
-              200 мл <span>95 р</span>
+          <p class="price__slide-text">
+            Взбитые сливки, Пломбир,
+            Эспрессо
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink2.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                200 мл
+              </div>
+              <div class="price__slide-mony">
+                95 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Кофейно-ореховый трюфель
+      <div class="price__slide slide-3">
+        <div class="price__slide-wrap">
+
+          <div class="price__slide-title">Кофейно-ореховый
+            трюфель
           </div>
-          <div class="price__slider-text">
+          <p class="price__slide-text">
             Молотый фундук, Взбитые сливки,
             Какао на молоке, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink3.png);"></div>
-            <div class="drink__price">
-              200 мл <span>70 р</span>
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink3.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                200 мл
+              </div>
+              <div class="price__slide-mony">
+                70 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Латте соленая
+      <div class="price__slide  slide-4">
+        <div class="price__slide-wrap">
+
+          <div class="price__slide-title">Латте соленая
             карамель
           </div>
-          <div class="price__slider-text">
+          <p class="price__slide-text">
             Соленая карамель, Взбитое молоко,
             Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink4.png);"></div>
-            <div class="drink__price">
-              250 мл <span>80 р</span>
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink4.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                250 мл
+              </div>
+              <div class="price__slide-mony">
+                80 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
-          </div>
-          <div class="price__slider-text">
-            Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink1.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
-            </div>
-          </div>
-        </div>
+      <div class="price__slide  slide-1">
+        <div class="price__slide-wrap">
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
+          <div class="price__slide-title">Цитрус раф
+            с карамелью
           </div>
-          <div class="price__slider-text">
+          <p class="price__slide-text">
             Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink2.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink1.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                250 мл
+              </div>
+              <div class="price__slide-mony">
+                90 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
-          </div>
-          <div class="price__slider-text">
-            Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink3.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
-          </div>
-          <div class="price__slider-text">
-            Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink4.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
-            </div>
-          </div>
-        </div>
+      <div class="price__slide  slide-2">
+        <div class="price__slide-wrap">
 
-        <div class="swiper-slide">
-          <div class="price__slider-title">
-            Цитрус раф с карамелью
+          <div class="price__slide-title">Перфетто айс
+            гляссе
           </div>
-          <div class="price__slider-text">
-            Карамельный сироп, Сок красного апельсина, Эспрессо
-          </div>
-          <div class="price__slider-drink">
-            <div class="drink__image"style="background-image: url(../images/icons/drink1.png);"></div>
-            <div class="drink__price">
-              250 мл <span>90 р</span>
+          <p class="price__slide-text">
+            Взбитые сливки, Пломбир,
+            Эспрессо
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink2.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                200 мл
+              </div>
+              <div class="price__slide-mony">
+                95 р.
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="price__slide slide-3">
+        <div class="price__slide-wrap">
+
+          <div class="price__slide-title">Кофейно-ореховый
+            трюфель
+          </div>
+          <p class="price__slide-text">
+            Молотый фундук, Взбитые сливки,
+            Какао на молоке, Эспрессо
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink3.png);"></div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                200 мл
+              </div>
+              <div class="price__slide-mony">
+                70 р.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="price__slide  slide-4">
+        <div class="price__slide-wrap">
+
+          <div class="price__slide-title">Латте соленая
+            карамель
+          </div>
+          <p class="price__slide-text">
+            Соленая карамель, Взбитое молоко,
+            Эспрессо
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink4.png);">
+              </div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                250 мл
+              </div>
+              <div class="price__slide-mony">
+                80 р.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="price__slide  slide-1">
+        <div class="price__slide-wrap">
+
+          <div class="price__slide-title">Цитрус раф
+            с карамелью
+          </div>
+          <p class="price__slide-text">
+            Карамельный сироп, Сок красного апельсина, Эспрессо
+          </p>
+          <div class="price__slide-inner">
+            <div class="price__slide-item slide__item-1">
+              <div class="price__slide-img" style="background-image: url(../images/icons/drink1.png);">
+              </div>
+            </div>
+            <div class="price__slide-item">
+              <div class="price__slide-ml">
+                250 мл
+              </div>
+              <div class="price__slide-mony">
+                90 р.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="current">
+
+      <span class="num-zer">0</span><span class="num__active"> 1</span><span class="line"></span> <span
+        class="num__as">06</span>
+
+    </div>
+
+  </div>
+</section>
+      <section class="promotions" id="promotions">
+  <div class="container">
+    <h2 class="promotions__title">Акции</h2>
+    <div class="desc__item-offer">Предложения действуют до 20.02.2020</div>
+    <div class="promotions__wrap">
+      <div class="current">
+
+        <span class="num-zer">0</span><span class="promotions-num__active"> 1</span><span class="line"></span> <span
+          class="num__as">06</span>
 
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="promotions__item item__slider-prom">
+      <div class="slider__promotion">
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion1.png);">
+
+          </div>
+        </div>
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion2.png);">
+
+          </div>
+        </div>
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion3.png);">
+
+          </div>
+        </div>
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion4.png);">
+
+          </div>
+        </div>
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion1.png);">
+
+          </div>
+        </div>
+
+        <div class="promotion__box">
+          <div class="slider-desc">
+            <div class="desc__item-title">Айриш-кофе <span>150 мл</span> </div>
+            <div class="desc__item-mony header__stock-desc__price">70 р</div>
+            <p class="desc__item-text">
+              <span>Состав:</span> Горячий эспрессо, ирландский виски, сахар,
+              взбитые сливки
+            </p>
+            <a href="#" class="desc__item-link header__info-link">Найти ближайшую кофейню</a>
+          </div>
+          <div class="slide__promotion-img" style="background-image: url(../images/content/slide-promotion2.png);">
+
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="slider__thumbs">
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion1.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion2.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion3.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion4.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion1.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion2.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion3.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion4.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion1.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__thumbs">
+          <div class="slide-box">
+            <div class="slide__thumbs-img" style="background-image: url(../images/content/slide-promotion2.png);">
+            </div>
+            <div class="slide__thumbs-desc">
+              <div class="slide__thumbs-title">Латте с сиропом</div>
+              <div class="slide__thumbs-wrap">
+                <div class="slide__thumbs-ml">330 мл</div>
+                <div class="slide__thumbs-mony">100 p.</div>
+              </div>
+              <p class="slide__thumbs-text">
+                <span>Состав:</span>
+                Горячий эспрессо, ирландский виски,
+                сахар, взбитые сливки
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </div>
   </div>
 </section>
-
-
+      <div class="services" id="services">
+  <div class="container">
+    <h2 class="services__title">Услуги</h2>
+    <div class="services__inner">
+      <div class="services__item">
+        <div class="services__img" style="background-image: url(../images/content/services-1.jpg);"></div>
+        <div class="services__item-title">Интернет-магазин</div>
+        <p class="services__text">
+          Вы можете приобрести кофейное оборудования и кофе ведущих мировых производителей с дегустационным залом и
+          собственым официальным сервисным центром.
+        </p>
+        <a href="#" class="services__link">Перейти в интернет-магазин</a>
+      </div>
+      <div class="services__item">
+        <div class="services__img" style="background-image: url(../images/content/services-2.jpg);"></div>
+        <div class="services__item-title">Обучение</div>
+        <p class="services__text">
+          После прохождения наших курсов вы будете уверенно разбираться в приготовлении всех видов кофейных напитков и
+          полностью готовы для работы бариста.
+        </p>
+        <a href="#" class="services__link">Перейти на сайт школы бариста</a>
+      </div>
+      <div class="services__item">
+        <div class="services__img" style="background-image: url(../images/content/services-3.jpg);"></div>
+        <div class="services__item-title">Каппинги</div>
+        <p class="services__text">
+          Мы регулярно проводим каппинги для любителей
+          и профессионалов. На дегустации определяем вкусовые характеристики кофе, аромат и внешний вид зерен.
+        </p>
+        <a href="#" class="services__link">Узнать подробнее о каппингах</a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="contacts" id="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <div class="contacts__item item__cotact">
+        <h2 class="contacts__title">
+          Контакты
+        </h2>
+        <p class="contacts__text">
+          Вы можете связаться с нами любым удобным для Вас способом. Мы будем рады ответить на все Ваши вопросы.
+        </p>
+        <div class="contacts__work contacts__reservation">
+          <span>Бронь столиков</span>
+          <a href="tel:+74732575970">+7 (473) 257 59 70</a>
+        </div>
+        <div class="contacts__work contacts__timework">
+          <span>Режим работы</span>
+          <div class="contacts__time">08:00 — 22:00</div>
+        </div>
+        <div class="contacts__work contacts__social">
+          <span>Мы в соцсетях</span>
+          <a class="soc-link__inst" href="#" style="background-image: url(../images/icons/insta-w.svg);"></a>
+          <a class="soc-link__fb" href="#" style="background-image: url(../images/icons/facebook-w.svg);"></a>
+        </div>
+      </div>
+      <div class="contacts__item item-map">
+        <div class="contacts__map" style="background-image: url(../images/content/map.jpg);"></div>
+      </div>
+      <div class="contacts__item item__adress">
+        <div class="contacts__adress">Наши адреса</div>
+        <ul class="contacts__list">
+          <li>ул. В. Невского, 59 г</li>
+          <li>пр. Революции, 39</li>
+          <li>ул. Комиссаржевской, 7</li>
+          <li>ул. К. Маркса 92 а</li>
+          <li>ул. Красноармейская, 17</li>
+          <li>парк «Динамо»</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
       
     </div>
 
@@ -295,8 +801,56 @@
 
     <!-- STOP WRITE CODE -->
     <div class="footer">
-      <footer class='footer'>
-  
+      <footer class='footer' id="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__item item__logo">
+        <a class="footer__logo" href="#" style="background-image: url(../images/icons/logo-w.png);"></a>
+      </div>
+      <div class="footer__item">
+        <div class="footer__title">Меню</div>
+        <ul class="footer__list">
+          <li><a href="#about" class="footer__link" id="fl">О нас</a></li>
+          <li><a href="#price" class="footer__link">Наш кофе</a></li>
+          <li><a href="#promotions" class="footer__link">Акции</a></li>
+          <li><a href="#contacts" class="footer__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__item item__tel">
+        <div class="footer__title footer__title-hide">Контакты</div>
+        <div class="contacts__work contacts__reservation tell-footer">
+          <a href="tel:+74732575970">+7 (473) 257 59 70</a>
+        </div>
+      </div>
+      <div class="footer__item item__time">
+        <div class="footer__title footer__title-hide">Режим работы</div>
+        <div class="contacts__work contacts__timework">
+          <div class="contacts__time">08:00 — 22:00</div>
+        </div>
+      </div>
+      <div class="footer__item">
+        <div class="footer__title footer__title-hide">Мы в соцсетях</div>
+        <div class="footer__social">
+          <a class="soc-link__inst" href="#" style="background-image: url(../images/icons/insta-w.svg);"></a>
+          <a class="soc-link__fb" href="#" style="background-image: url(../images/icons/facebook-w.svg);"></a>
+        </div>
+      </div>
+    </div>
+      <form class="footer__form">
+        <div class="footer__form-inner">
+          <label class="footer__form-title">Свяжитесь с нами</label>
+          <input class="footer_input" type="text" required placeholder="Имя">
+          <input class="footer_input footer__tel-form" type="number" required placeholder="+7 ххх хх хх хх">
+          <button type="submit" class="footer__btn">Отправить</button>
+        </div>
+        <input type="checkbox" class="footer__checkb"> <label class="footer__config"><span>Я соглашаюсь с</span> Правилами обработки персональных данных</label>
+      </form>
+      <div class="footer__inner-bottom">
+        <span class="footer__item-prava">© 2020 все права защищены</span>
+        <a class="footer__item-data" href="#">Правила обработки персональных данных</a>
+        <a class="footer__item-confid" href="#">Политика конфиденциальности </a>
+      </div>
+  </div>
 </footer>
     </div>
     <script src="js/libs.min.js"></script>
